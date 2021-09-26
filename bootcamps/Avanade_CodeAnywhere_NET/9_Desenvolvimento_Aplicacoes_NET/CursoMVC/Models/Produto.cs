@@ -5,6 +5,7 @@ namespace CursoMVC.Models
 {
     public class Produto
     {
+        [Display(Name = "Prod ID")]
         public int Id { get; set; }
 
         [Display(Name = "Descrição")]
