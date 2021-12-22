@@ -1,0 +1,30 @@
+/* palette of colors
+    #493843
+    #61988E
+    #A0B2A6
+    #CBBFBB
+    #EABDA8
+*/
+body {
+    background-color: #A0B2A6;
+}
+table {
+    border: 1px solid #EABDA8;
+}
+table tr td {
+    width: 25%;
+    height: auto;
+    /*border: 1px solid #EABDA8;*/
+}
+td img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #EABDA8;
+    height: 75%;
+}
+table tr td p {
+    text-align: center;
+    height: 25%;
+    border: 1px solid #EABDA8;
+}
