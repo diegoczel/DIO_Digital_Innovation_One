@@ -5,6 +5,18 @@
     #CBBFBB
     #EABDA8
 */
+#personal_img  {
+    border-radius: 50%;
+}
+#h1 {
+    display: inline;
+}
+#ul_link_contact li {
+    display: inline;
+}
+li {
+    list-style-type: none;
+}
 body {
     background-color: #A0B2A6;
 }
