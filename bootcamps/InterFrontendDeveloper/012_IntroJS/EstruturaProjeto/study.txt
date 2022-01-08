@@ -1,0 +1,39 @@
+
+
+pasta
+  index.html
+  assets
+    // files que tu tem, seja css, js, img,...
+    // todos arquivos que não sejam html
+    css
+      style.css
+    js
+      script.js
+
+DOM
+  * é uma tree
+  * é a estrutura dos elementos dentro de uma window
+  estrutura
+    window
+      History
+      Location
+      Document
+        Heading level 1
+          Text Node
+        Paragraph
+          Anchor
+            Text Node
+          Form
+            Input [type=submit]
+            input [type=text]
+          Text Node
+
+        Heading Level 2
+          Text Node
+        Anchor
+          Text Node
+
+  let heading1 = document.getElementsByTagName('h1')[0];
+    return posição 0 do array
+  heading1.style.color = '#ff5000';
+    // altera property css color usando DOM

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <h1>Contador</h1>
+  <p>++ or --</p>
+  
+  <!--
+    TODO
+    1) usar addEventListener
+    2) habilitar ou desabilitar botão, conforme valor.
+      Digamos 0, desabilitar botão decrement
+      Digamos 10, desabilitar botão increment
+    3) mudar a cor do texto quando current number:
+      0 red
+      10 green
+  -->
+  <div>
+    <button name="subtrair" onclick="decrement()">-</button>
+    <span class="dcs-span-con" id="current-number">0</span>
+    <button name="adicionar" onclick="increment()">+</button>
+    <span>Normal</span>
+  </div>
+  
+  <div>
+    <button id="but2Dec" name="subtrair2" onclick="decrement2()">-</button>
+    <span class="dcs-span-con" id="current-number2">0</span>
+    <button id="but2Inc" name="adicionar2" onclick="increment2()">+</button>
+    <span>Using disabled/style.color when contador is 0 or 10</span>
+  </div>
+
+  <div>
+    <button id="but3Dec" name="subtrair3">-</button>
+    <span class="dcs-span-con" id="current-number3">0</span>
+    <button id="but3Inc" name="adicionar3">+</button>
+    <span>Using addEventListener</span>
+  </div>
+  
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
