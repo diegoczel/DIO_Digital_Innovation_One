@@ -1,0 +1,14 @@
+Atribuição
+  = += *= /= %=
+Math
+  + - * / ** % ++ --
+Comparação
+  == 2 == '2' return true
+  === 2 == '2' return false, pois, compara o valor e o type
+  !=
+  !== value and type diferentes
+  > < >= <=
+Lógica
+  && || !
+if ternário
+  (condição) ? true : false;
