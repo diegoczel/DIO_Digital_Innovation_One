@@ -1,0 +1,153 @@
+function anonima
+	// fun sem nome
+	const soma = function (a, b) {
+		return a + b;
+	}
+	
+function autoinvocavel
+	// IIFE Immediately Invoked Funcion Expression
+	// function anonima dentro de (), seguido por () que representa sua chamada imediata
+	const soma = (
+		function (a, b) {
+			return a + b;
+		}
+	)(1, 2);
+	console.log(soma);
+	
+function callbacks
+	// function passada como argumento para outra function
+	const calc = function(op, x, y) {
+		return op(x, y);
+	}
+	
+	const soma = function(x, y){
+		return x + y;
+	}
+	
+	const sub = function(x, y) {
+		return x - y;
+	}
+	
+	console.log(calc(soma, 1, 2));
+	console.log(calc(sub, 1, 2))
+	
+arg default
+	// pre es2015
+	function (a) {
+		if( a === undefined) {
+			// significa que não foi passado arg
+			a = 1; // e a recebe um valor default
+		}
+	}
+	// pos es2015
+	function (a = 3)
+	
+arg object arguments
+	function a() {
+		// arguments contém todos os argumentos passados no call da function
+		for(let i = 0; i < arguments.length; i++) {
+			console.log(arguments[i]);
+		}
+	}
+	
+lidando com array
+	spread
+		// forma de lidar separadamente com elementos
+		function sum(x, y) {
+			return x + y
+		}
+		const n = [1, 3];
+		// é uma maneira de descontruir array
+		console.log(sum(...n));
+	rest
+		// combina os arg em um array
+		function x(...args) {
+			return x; // x será um array
+		}
+		// n será [ 1, 2, 3 ]
+		const n = x(1, 2, 3);
+
+lidando com objetos
+	object destructuring
+		const obj = {
+			nome: "diego",
+			idade: 27
+		};
+		// irá procurar por uma propriedade no arg do type obj
+		function f1({nome}) {
+			return nome;
+		}
+		//function f1({nome: {p1: novoNome, p2}})
+		// nesse caso, procura por uma propriedade nome, e,
+		// dentro dela pela combinação das propriedades: p1 e p2
+		// substituindo o nome p1 por novoNome para utilização dentro da fun
+		console.log(f1(obj));
+		
+if else if 
+
+switch 
+	** formas de match
+
+for in
+	used in obj
+for of
+	itera em iteraveis, like, array; str
+	
+this
+	// é uma referência ao contexto
+	const obj = {
+		nome: "diego",
+		sobrenome: "czel",
+		full: function () {
+			let nome = "cris";
+			let sobrenome = "faustino";
+			// sobrenome pega local
+			// this.nome pega no contexto, o obj
+			return this.nome + sobrenome;
+		}
+	}
+	obj.full(); // => diegofaustino
+	
+	contexto				referência
+	em um object (method)	próprio obj dono do método
+	sozinha					objeto global ( em navegadores, window )
+	function				objeto global
+	evento					elemento que recebeu o evento
+		no caso de um button com onclick="console.log(this)",
+		irá show o element que gerou o evento, o próprio button.
+
+	this call
+		meio que substitui o context, podendo, manipular outro contexto.
+
+		** verificar melhor
+		
+	this apply
+		similar ao call, só que passa os arg como array
+		** verificar melhor
+		
+	this bind
+		** verificar melhor
+
+function arrow
+	// similar a function anonima
+	const f1 = fucntion() {
+		return "a";
+	}
+	const f2 = () => {
+		return "b";
+	}
+	// quando for 1 linha, o return é implicito, e não precisa {}
+	const f3 = () => "c";
+	sintaxe e regras
+		* 1 linha
+			pode ignorar os {}
+			const f = (a, b) => a + b; // f(1, 2)
+		* 1 argumento
+			pode ignorar o ()
+			const f = a => a; // f(5)
+		* arrow function não faz hoisting
+		* this
+			- sempre sera o global, não funciona call, apply, bind
+			- não tem object arguments
+			- não pode usar construtor
+			- não tornar arrow function como metodos de obj
