@@ -1,0 +1,16 @@
+ECMScript Error
+  * acontece em tempo de execução
+
+DOMException
+  * acontece quando js manipula o dom
+
+throw
+
+try catch finally
+
+Error
+  new Error(message, file, line)
+    * file, line
+      não são padrão, então pode gerar problemas em alguns browsers
+  * const erro = new Error('erro customizado');
+  throw erro;
