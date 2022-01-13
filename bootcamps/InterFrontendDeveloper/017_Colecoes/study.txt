@@ -1,0 +1,30 @@
+Map
+  * Coleção de arrays no formato [ key, value ]. ? similar ao dict?
+  * pode ser iterado por um loop for of
+
+  const m = new Map();
+
+  * operações
+    - add => m.set('key', 'value');
+    - get => m.get('key');
+    - delete => m.delete('key');
+
+  * diferença entre Map e object
+    - Map pode ter qualquer tipo de key, object só pode string
+    - Map possuí propriedade length, permitindo iterar
+    - Utilizado quando key é desconhecido
+
+Set
+  * estrutura que armazena unique values, like set of python
+
+  const s = new Set() | Set([1,2,1,3,4,2,4]);
+
+  * operações
+    - add => s.add(5);
+    - buscar => s.has(6)
+    - delete => s.delete(4)
+
+  * diferença entre set e array
+    - Possui valores unicos
+    - tamanho se da pela propriedade size
+    - não possui os metodos map, filter, reduce
