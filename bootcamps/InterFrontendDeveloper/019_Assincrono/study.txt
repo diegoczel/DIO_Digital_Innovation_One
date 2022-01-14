@@ -1,0 +1,22 @@
+Síncrono
+  a proxima tarefa só inicia quando a atual termina
+Assíncrono
+  pode ter ter tarefas em execução no mesmo tempo.
+
+promises
+  * objeto de processamento assíncrono.
+  * promise, inicialmente seu valor é desconhecido, ela pode, então,
+    ser resolved ou rejected.
+  * Promises é uma "promessa", que será ou não executada posteriormente.
+    Se executada:
+      ela é Resolved, usando o .then()
+    Não executada:
+      ela é rejected, usando .catch()
+  * exemplo:
+    imagine um ingresso de um show, ele é uma promise,
+    no dia pode ou não acontecer ( executar )
+
+promises etapas:
+  1) pending -> pendente
+  2) fulfilled -> completado
+  3) rejected -> refected
