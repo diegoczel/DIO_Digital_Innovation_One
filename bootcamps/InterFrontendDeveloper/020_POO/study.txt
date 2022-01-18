@@ -1,0 +1,22 @@
+__proto__
+  prototype, todos objetos herdam propriedade e metodos de um prototype.
+  Object.prototype é o pai de todos
+
+class
+  * Em js, class é um SYNTATIC SUGAR, ou seja, para facilitar, mas no fundo, tudo é feito usando prototype
+  * usando prototype
+    let Meal = function(food) {
+      this.food = food;
+    }
+    Meal.prototype.eat = function() {
+      return 'comendo';
+    }
+  * usando class
+    class Meal {
+      constructor(food) {
+        this.food = food;
+      }
+      eat() {
+        return 'comendo';
+      }
+    }
