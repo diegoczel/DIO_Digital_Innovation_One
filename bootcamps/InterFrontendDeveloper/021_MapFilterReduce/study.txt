@@ -1,0 +1,31 @@
+map
+  * cria um novo array baseado em uma function, não modificando o original
+  * sintaxe
+    array.map(callback, thisArg) onde
+	  callback(item, index, array)
+	    function a ser executada em cada elemento
+  * map vs forEach
+    map
+	  * return new array
+	  const arr1 = [1,2,3,4,5];
+	  arr1.map((item) => item * 2);
+	forEach
+	  * return undefined
+	  * precisa de um array auxiliar
+	  const arr2 = [1,2,3,4,5];
+	  arr1.forEach((item) => item * 2);
+	  
+filter
+  * cria um novo array baseado em uma function bool
+  * sintaxe
+    array.filter(callback, thisArg)
+  const arr1 = [1,2,3,4,5];
+  arr.filter(item => item % 2 == 0); // [2, 4]
+  
+reduce
+  * executa uma function em um array e retorna um elemento do processamento
+  * sintaxe
+    array.reduce(callback, initialValue)
+	  callback -> function a ser exec a partir do acumulador
+	    pode acessar: accumulator, currentValue, index, array
+	  initialValue -> valor sobre o qual o retorno final irá atuar
