@@ -1,0 +1,7 @@
+* api https://swapi.dev/
+* git https://github.com/ThiagoAcam/ControleAcessoEstrelaDaMorte
+
+TODO
+  * front em html, css, js do gerenciador de naves
+  * implementar usando react
+  * manipular as chamadas da api usando js
