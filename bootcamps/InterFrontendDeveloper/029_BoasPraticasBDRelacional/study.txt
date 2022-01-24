@@ -1,0 +1,4 @@
+ORM
+  componentes utilizados para abstrair as consultas do bd
+relacionamentos
+  1:n

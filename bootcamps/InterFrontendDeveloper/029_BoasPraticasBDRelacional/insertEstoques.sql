@@ -1,0 +1,1 @@
+insert into Estoque(CodigoProduto, CodigoFilial, Quantidade) values (1, 1, 10)
